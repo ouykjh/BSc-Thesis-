@@ -40,6 +40,7 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyB3AUXVeJIZVnMV-Jx2D__kbQGX5yPBYWc" />
         <activity android:name="FormularActivity"></activity>
+        <activity android:name="DatabaseViewActivity"></activity>
         
     </application>
 

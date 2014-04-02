@@ -5,23 +5,66 @@
     tools:context=".FormularActivity" >
 
     <TextView
-        android:id="@+id/address"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="27dp"
-        android:text="@string/Address" />
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/formular_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/addressOutcome"
+    <Button
+        android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/address"
-        android:layout_alignBottom="@+id/address"
-        android:layout_marginLeft="28dp"
-        android:layout_toRightOf="@+id/address"
-        android:text="TextView" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="64dp"
+        android:text="@string/send_formular"
+        android:width="@android:dimen/thumbnail_width" />
+
+    <TextView
+        android:id="@+id/adressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="52dp"
+        android:text="@string/addressText"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/fdAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adressText"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/adressText"
+        android:layout_marginTop="26dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RatingBar
+        android:id="@+id/rbWasteAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSend"
+        android:layout_alignLeft="@+id/fdAddress"
+        android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fdAddress"
+        android:layout_below="@+id/fdAddress"
+        android:layout_marginTop="25dp"
+        android:text="@string/waste_amount_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout> 

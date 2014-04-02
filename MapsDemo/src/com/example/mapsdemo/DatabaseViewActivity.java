@@ -8,14 +8,13 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
-import android.widget.Toast;
 
 import com.example.db.Address;
 import com.example.db.DatabaseHelper;
 import com.example.db.WasteAmount;
 import com.google.android.gms.internal.ad;
 
-public class FormularActivity extends Activity {
+public class DatabaseViewActivity extends Activity {
 	
 	EditText fdAddress;
 	RatingBar rbWasteAmount;
@@ -74,7 +73,6 @@ public class FormularActivity extends Activity {
 		address.setCountry(country);
 */	
 		addToDatabase(address, wasteAmount);
-		Toast.makeText(getApplicationContext(), "Dane zostały dodane do bazy!", Toast.LENGTH_SHORT);
 		}
 	
 	private void getFromDatabase(){
